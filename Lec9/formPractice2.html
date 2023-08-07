@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Job Application </h2>
+    <form  style="font-size: larger;">
+
+        <label for="fullname">Name :</label> <br/> <br/>
+        <input type="text" id="fullname">
+        <br/>
+        <label for="email">Email :</label> <br/> <br/>
+        <input type="email" id="email" required>
+        <br/>
+        <label for="phone">Phone :</label> <br/> <br/>
+        <input type="tel" id="phone" required>
+        <br/>
+        <label for="resume">Resume</label> <br/> <br/>
+        <input type="file" name="resumefile" id="resume">
+        <br/>
+        <label for="experience">Experience (years ) : </label> <br/> <br/>
+        <input type="number" name="experienceField" id="experience" min="0" max="10" >
+
+        <br/>
+        <fieldset >
+            <legend>Skills : </legend>
+
+            <input type="checkbox" name="check1" id="checkbox1"> <br/>
+        <label for="checkbox1">HTML</label> <br/>
+
+        <input type="checkbox" name="check2" id="checkbox2"> <br/>
+        <label for="checkbox2">CSS</label> <br/>
+
+        <input type="checkbox" name="check3" id="checkbox3"> <br/>
+        <label for="checkbox3">JavaScript</label>
+        </fieldset>
+
+        <br/>
+        <label for="occupation">Highest Education :</label> <br/> <br/>
+        <select name="occupationbox" id="occupation">
+            <option value="none" selected disabled hidden  >Select choice : </option>
+            <option value="Adegree">Associate Degree</option>
+            <option value="BDegree">Bechalor's Degree</option>
+            <option value="MDegree">Master Degree</option>
+            <option value="phd">PHD</option>
+        </select>
+
+        <br/>
+
+        <label for="Availability"> Availability : </label> <br/> <br/>
+        <input type="radio" name="checkbox" id="Availability1">
+        <label for="Availability1"> Fulltime</label>
+
+        <input type="radio" name="checkbox" id="Availability2">
+        <label for="Availability2"> Parttime</label>
+
+        <br/>
+        <label for="comment">Additional Comments :</label> <br/> <br/>
+        <textarea name="commentField" id="comment" cols="30" rows="10" placeholder="Please add comments "></textarea>
+
+        <button>Submit Application </button>
+
+
+
+    </form>
+
+</body>
+</html>

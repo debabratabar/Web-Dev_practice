@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Event Registration</h2>
+    <form  style="font-size: larger;">
+
+        <label for="fullname">Name :</label> <br/> <br/>
+        <input type="text" id="fullname">
+        <br/>
+        <label for="email">Email :</label> <br/> <br/>
+        <input type="email" id="email" required>
+        <br/>
+        <label for="phone">Phone :</label> <br/> <br/>
+        <input type="tel" id="phone" required>
+        <br/>
+        <label for="occupation">Occupation :</label> <br/> <br/>
+        <select name="occupationbox" id="occupation">
+            <option value="none" selected disabled hidden  >Select choice : </option>
+            <option value="Student">Student</option>
+            <option value="Professional">Professional</option>
+            <option value="Others">Others</option>
+        </select>
+
+        <br/>
+
+
+        <fieldset >
+            <legend>Topics of Interest : </legend>
+
+            <input type="checkbox" name="check1" id="checkbox1"> <br/>
+        <label for="checkbox1">HTML</label> <br/>
+
+        <input type="checkbox" name="check2" id="checkbox2"> <br/>
+        <label for="checkbox2">CSS</label> <br/>
+
+        <input type="checkbox" name="check3" id="checkbox3"> <br/>
+        <label for="checkbox3">JavaScript</label>
+        </fieldset>
+
+        
+
+        <br/>
+        <label for="comment">Comments :</label> <br/> <br/>
+        <textarea name="commentField" id="comment" cols="30" rows="10" placeholder="Please add comments "></textarea>
+
+        <button>Register</button>
+
+
+
+    </form>
+
+</body>
+</html>
