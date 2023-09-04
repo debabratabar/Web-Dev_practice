@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture-16 Display Property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 ;
+        }
+        span {
+            background-color: yellow;
+            border: 3px solid black;
+            margin: 3px ;
+            display: block;
+            height: 50px;
+            width: 200px;
+            padding: 3px;
+        }
+        .blockEle li {
+            margin: 5px;
+            border: 4px solid lightgreen ;
+        }
+    </style>
+</head>
+<body>
+    <h2>Display Property</h2>
+    <p >Display property defines how a element should appear in the Webpage </p>
+</br> </br>
+    <dl>
+        <dh style="margin: 5px 5px ;">1. Inline Element</dh>
+        <dd> 
+          
+                <span>inline elements tries to fit same line </span>
+                <span>Inline elements covers the context size</span>
+                <span>Inline element doesn't accept customized height & width value</span>
+                <span>Inline Element doesn't accept vertical margin</span>
+             </dd>
+
+            </br> </br>
+        <dh>2. Block Element</dh>
+        <dd>
+            <ul class="blockEle">
+                <li style="background-color: yellow;">Block Elements start with New line </li>
+                <li style="background-color: yellow;">BLock Elements starts from left and go all the way to right of the viewport  </li>
+                <li style="background-color: yellow;">BLock Elements supports customize height & width value  </li>
+                <li style="background-color: yellow;">Block Elements supports customize padding & margin </li>
+            </ul>
+        </dd>
+    </dl>
+</body>
+</html>
