@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail of size units </title>
+    <style>
+        .containerpixel{
+            background-color: green;
+            height: 200px;
+            width: 100px;
+        }
+        .parentContainer{
+            width: 50%;
+            background-color: aqua;
+            border: 1px solid rebeccapurple;
+        }
+        .containerperc{
+            background-color: pink;
+            /* height: 10%; */
+            width: 50%;
+            margin: 10px;
+        }
+        .containerViewp{
+            background-color: burlywood;
+            width: 100vw;
+            height: 30vh;   
+        }
+
+        .parentem{
+            background-color: orange;
+            width: 10px;
+        }
+        .containerEM{
+            background-color: yellow;
+            width: 10em;
+            margin:10px 10px;
+
+        }
+        .containerREM{
+            background-color: saddlebrown;
+            width: 10rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="containerpixel">I am a Pixel Size unit </div>
+    <div class="parentContainer">
+        <div class="containerperc">I am a 50% width  Size unit </div>
+    </div>
+    
+    <div class="containerViewp">I am a 100vw , 30vh Size unit </div>
+
+    <div class="parentem">
+        <div class="containerEM">I am a em Size unit </div>
+    </div>
+    
+    <div class="containerREM">I am a rem Size unit</div>
+    
+</body>
+</html>

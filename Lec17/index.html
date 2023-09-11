@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masterig position Property </title>
+    <style>
+         .parentDiv{
+            /* display: inline-block; */
+            /* height: 100px; */
+            /* width: 100px; */
+            border:5px solid black;
+            padding: 5px;
+            background-color: beige;
+            height: 1000px;
+            position: relative;
+        }
+        .container2{
+            border:5px solid red;
+            padding: 5px;
+            background-color: rgb(222, 222, 146);
+            height: 1000px;
+        }
+        .divclass1{
+            display: inline-block;
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+
+        }
+
+        .divclass2{
+            display:inline-block;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 100px;
+            text-align: center;
+
+            
+        }
+
+        .divclass3{
+            display: inline-block;
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .divclass4{
+            display: inline-block;
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            left: 90%;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="parentDiv">
+        <div class="divclass1">positionFixed</div>
+        <div class="divclass2">positionRelative</div>
+        <div class="divclass3">positionSticky</div>
+        
+    </div>
+    <div class="divclass4">positionFixed</div>
+
+    <div class="container2"></div>
+
+
+   
+</body>
+</html>
