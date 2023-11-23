@@ -4,107 +4,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>HTML Block Element</title>
   <style>
-    p {
-      background-color: greenyellow;
+    #heading1 {
+      background-color: aqua;
+      border: 5px blue solid;
+      /* change the corner of rectangular border  */
+      /* border-radius: 10px; */
+      border-top-left-radius: 10px;
+      width: 350px;
     }
 
-    /* h1{
-            color: goldenrod;
-        } */
+    #heading2 {
+      width: 200px;
+      font-size: large;
 
+      padding: 20px;
+      border: 5px dashed green;
+      text-align: center;
+      margin: 20px 0 0 20px;
 
-
-    .cl1 {
-      color: yellow;
     }
 
-
-    #id1 {
-      color: red;
+    #firstPara {
+      background-color: chartreuse;
+      /* border: 3px blue solid; */
+      border-bottom: 3px blue solid;
+      width: 350px;
+      border-top-right-radius: 10px;
     }
 
+    #secondPara {
+      background-color: chocolate;
+      border-top: 3px blue solid;
+      width: 350px;
+      border-bottom-left-radius: 10px;
+    }
 
+    #thirdPara {
+      background-color: yellow;
+      border-left: 3px blue solid;
+      border-bottom-right-radius: 10px;
+      width: 350px;
+    }
 
-    /* .cl2{
-            color: blueviolet;
-        }
-        
+    #FourthPara {
+      background-color: yellow;
+      border: 3px blue solid;
+      width: 350px;
+      padding: 20px 20px 0 0;
+      margin: 0 0 20px 20px;
+    }
 
-        
-        #id2{
-            color: green;
-        } */
+    #FifthPara {
+      background-color: yellow;
+      border: 3px blue solid;
+      width: 350px;
+      padding: 0 0 20px 20px;
+      margin: 0 0 20px 20px;
+    }
+
+    #SixthPara {
+      background-color: yellow;
+      border: 3px blue solid;
+      border-bottom-right-radius: 10px;
+      width: 350px;
+      padding: 0 20px 20px 0;
+      margin: 5% 0 0 20px;
+    }
+
+    #boxSizing {
+      background: yellowgreen;
+      width: 350px;
+    }
   </style>
-
-
-  <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-  <h1 id="id1" class="cl1 ">This is heading tag </h1>
-
-
-  <h1> Learning of CSS </h1>
-  <p style="background-color: beige;"> CSS stands for Cascading Style Sheet , It handles the styling of a Webpage , </p>
-
-  <h3>Different types of CSS</h3>
-
-  <ul>
-    <li>Inline CSS</li>
-    <li>Internal CSS</li>
-    <li>External CSS</li>
-  </ul>
-  <h3>Importance of Cascading word in CSS</h3>
-
-  <p>Cascading is roled based mechanism to priority or hierarchy to applying styles to your html elements . its defining
-    how the styles will be
-    added to html elements when we apply multiple style to a sigle html element
+  <h1 id="heading1">Welcome to CodeHelp</h1>
+  <p id="firstPara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor deleniti, voluptatum ad numquam,
+    soluta maiores nesciunt quae, temporibus fuga dolore perferendis accusamus atque ea incidunt. Libero cum aperiam
+    quod sunt.</p>
+  <p id="secondPara">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde, autem reiciendis consequatur labore eius cumque
+    ipsum voluptatibus temporibus deleniti. Molestias vitae fuga repellat veniam aperiam veritatis reprehenderit
+    assumenda dolores.
   </p>
 
-  <h4>Different Four Factors of Cascading </h4>
+  <p id="thirdPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tempora cum debitis quae, saepe
+    iusto quo nesciunt velit fugiat iste!</p>
 
+  <hr>
+  <hr>
+  <h2 id="heading2">Learning Box Model</h2>
+  <p style="background-color: yellow; display: inline-block ;">box model defines that every element in a web page will
+    be rendered in a rectangular format </p>
+  <p>Box Model contains 4 components</p>
   <ol>
-    <li>Specificity</li>
-    <p style="background-color: white;">Specificity follows below rule <br /> (0/1) --> Inline <br /> (0/1) --> ID
-      <br /> (0/1) --> class <br /> (0/1) --> Element <br /> </p>
-
-    <li> Importance</li>
-    <p>Importance refers "!Important" keyword , whichever styles has this rule , have more precedence</p>
-
-    <li>Origin</li>
-    <p> the Origin refers from where the styles are coming .
-      is it browset defaults , user-defined styles
-      At the end user-definred styles has more precedence </p>
-    <li>order of Appererance</li>
-    <p> if specificity , Origin , Importance same for an element ,
-      then the one which comes later has more precedence</p>
-
-
+    <li>Content</li>
+    <li>Padding</li>
+    <li>Border</li>
+    <li>Margin</li>
   </ol>
 
+  <p id="FourthPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus vero ducimus voluptatibus
+    laborum a illo sint explicabo at, quidem beatae nobis laudantium minima et eum molestiae ratione ipsa? Nostrum,
+    quasi!</p>
 
+  <p id="FifthPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam accusantium beatae eius voluptate
+    eos atque asperiores sed exercitationem dolorum consectetur, deserunt dolorem quisquam? Eligendi animi distinctio
+    eos ut placeat amet!</p>
 
+  <p id="SixthPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquid quod quia magnam incidunt
+    officia doloribus voluptatem odit. Libero aut quia modi inventore, earum voluptatem quasi delectus tenetur sed iste?
+  </p>
 
-  <h4>Cascading Rules</h4>
-
-  <ol>
-    <li>Id has the higher priority from class</li>
-    <li> !Important has higher Priority from all</li>
-    <li> inline has higher priority </li>
-    <li> between External & intenal CSS , Both has same Priority but here Priority Works on order , Which one comes at
-      last has the higher Priority</li>
-    <li> in Internal CSS for same elements styles the last one will have higher priority</li>
-  </ol>
-
-  <h4>Cascading Importance References </h4>
-  <a
-    href="https://mgearon.com/css/how-does-css-cascade/#:~:text=Cascading%20is%20probably%20one%20of,Origin%20and%20importance">
-    References 1</a>
+  <h4 style="color: green;">Box -Sizing CSS Property</h4>
+  <p id="boxSizing">box-sizing property is allows us to include padding & border into an element's height & width </br>
+    by default the height & width only applies to the content of the element , if we increase the border & padding then
+    the height & width will increase </br>
+    if we set to box-sizing value to "border-box" even if we increase the border & padding it will be in the defined
+    height & width </p>
 </body>
 
 </html>
